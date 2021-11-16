@@ -1,0 +1,377 @@
+/* 
+Для решения проблемы кроссбраузерности и соответствия макету обнуляем все стили 
+*/
+
+/* 1) очищаем все отступы и границы */
+* {
+    /* звёздочка означает что мы обращаемся ко всем тегам на странице */
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+/* 2) меняет подсчёт ширины блока так, чтобы нам было удобнее верстать*/
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 3) убираем линии обводки у некоторых браузеров */
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+/* 4) перечисляем некоторые html5 теги и добавляем им значение block - это делает их блочными*/
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+/* 5) применим к тегам html и body параметры которые уравнивают поведение шрифтов и элементов для разных браузеров, в т.ч. запрещают самовольное увеличение шрифта(на айфонах например)*/
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* 6) применяем к тегам форм наследуемый шрифт (по умолчанию они не наследуют семейство шрифта) */
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+/* 7) добавляем несколько параметров некоторым тегам, которые убирают некоторые особенности в разных браузерах */
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a,
+hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+/* 8) обнуляем все наши заголовки h*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/* НАСТАИВАЕМ СТИЛИ */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+body {
+    /*background-color: Azure;
+    background: url('../img/bg_repeat_4.png'); */
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e1ffff+0,e1ffff+0,e1ffff+0,fdffff+0,c7c6ff+100 */
+    background: rgb(225, 255, 255); /* Old browsers */
+    background: -moz-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(253, 255, 255, 1) 0%,
+        rgba(199, 198, 255, 1) 100%
+    ); /* FF3.6-15 */
+    background: -webkit-radial-gradient(
+        center,
+        ellipse cover,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(253, 255, 255, 1) 0%,
+        rgba(199, 198, 255, 1) 100%
+    ); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(
+        ellipse at center,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(225, 255, 255, 1) 0%,
+        rgba(253, 255, 255, 1) 0%,
+        rgba(199, 198, 255, 1) 100%
+    ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#c7c6ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.main-header {
+    padding-top: 10px;
+    padding-right: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: inline;
+}
+
+.wrapper {
+    /*max-width: 1200px;*/
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    /*margin: 0 auto;*/
+}
+
+.main-header--layout {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    /*border: 1px solid rgba(255, 255, 255, 0.7);*/
+}
+
+.main-header--logolink {
+    height: 10%;
+    width: 10%;
+    margin-right: 30px;
+    box-shadow: 0 0 10px #ffef61;
+    border-radius: 50%;
+    /*border: 1px solid rgba(255, 255, 255, 0.7);*/
+}
+
+.main-nav:last-child {
+    margin-left: auto;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    /*border: 1px solid rgba(255, 255, 255, 0.7);*/
+}
+
+.main-nav--link {
+    margin-left: 3vw;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: block;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: auto;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+.header-h1 {
+    display: flex;
+    width: 70%;
+    /*border: 1px solid rgba(255, 255, 255, 0.7);*/
+}
+
+/*.header-h1:last-child {
+    margin-right: auto;
+}*/
+
+.header-h1 h1 {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+    /*width: 100%;*/
+    line-height: 150%;
+    text-align: center;
+    margin: 10px;
+    font-size: 3vw;
+    color: cornflowerblue;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+    /*border: 1px solid rgba(255, 255, 255, 0.7);*/
+}
+
+.header-h1 h1:hover {
+    border-radius: 100%;
+    transition: 2s;
+}
+
+.header-h1 h1:not(:hover) {
+    transition: 2s;
+}
+
+.screen-home {
+    padding: 300px 0px 0px 0px;
+    font-size: 4vw;
+    color: MediumPurple;
+}
+
+.main-home {
+    display: inline-block;
+    /*height: 40%;*/
+    /*border: 1px solid #000;*/
+    position: absolute;
+    left: 30%;
+    margin: 5%;
+}
+
+.h2 {
+    /*border: 1px solid #000;*/
+}
+
+.h2-span {
+    color: Red;
+    font-size: 4vw;
+}
+
+.about-photo {
+    max-width: 10%;
+    height: auto;
+    border-radius: 15%;
+    float: right;
+    margin: 3% 5% 0px 0px;
+}
+
+.inthis {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    height: 500px;
+    /*padding: 0 250px 0 250px;*/
+    /*border: 1px solid #000;*/
+}
+
+.dropdown {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+    position: relative;
+    /*display: flex;*/
+    /*justify-content: center; */
+    padding: 3px 3px 3px 3px;
+    margin: 3px 3px 3px 3px;
+    /*border: 1px solid #000;*/
+    vertical-align: top;
+}
+
+.dropbtn {
+    -webkit-flex-grow: 3;
+    flex-grow: 3;
+    background-color: #4caf50;
+    color: white;
+    /*padding: 8px;*/
+    font-size: 1.4vw;
+    max-width: 200px;
+    min-width: 50px;
+    max-height: 80px;
+    min-height: 5px;
+    /*width: 160px;
+    height: 80px;*/
+    width: 80%;
+    height: 10%;
+    border: 5px solid Black;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.dropdown-content {
+    display: none;
+    /*text-align: center;*/
+    /*justify-content: center;*/
+    /*max-width: 80px;*/
+    /*float: center;*/
+    background-color: Ivory;
+    /*max-height: 100px;*/
+    /*min-width: 50px;*/
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 20), inset 0px 1px 1px 0px rgba(0, 0, 0, 2);
+    /*z-index: 1;*/
+    border: 2px solid Black;
+    border-radius: 10px 10px 10px 10px;
+    /*left: 50%;*/
+    /*margin-left: -50%;*/
+    width: 50%;
+    height: 35%;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: -44%;
+    left: 0;
+    bottom: 0%;
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 0px 10px 0px;
+    /*text-decoration: none;*/
+    display: block;
+    font-size: 1.5vw;
+    height: 33%;
+    /*border: 1px solid #000;*/
+}
+
+.dropdown-content a:hover {
+    background-color: NavajoWhite;
+    border-radius: 10px 10px 10px 10px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.screen-work {
+    padding: 550px 0px 0px 0px;
+}
