@@ -8,6 +8,7 @@ h1.onmouseleave = function () {
     h1.style.background = "MediumPurple";
 };
 
+
 window.onload = function () {
     var h1_color = document.querySelector('h1');
     h1_color.onmousemove = function () {
@@ -17,6 +18,25 @@ window.onload = function () {
         this.style.color = '#FFFF00';
     };
 };
+
+
+Send_message.onmouseover = function () {
+    Send_message.style.background = "#CC99FE";
+};
+
+Send_message.onmouseleave = function () {
+    Send_message.style.background = "rgba(0, 153, 255, 0.164)";
+};
+/*
+window.onload = function () {
+    var button_color = document.querySelector('Send_message');
+    button_color.onmousemove = function () {
+        this.style.color = 'White';
+    };
+    button_color.onmouseout = function () {
+        this.style.color = '#FFFF00';
+    };
+};*/
 
 
 
