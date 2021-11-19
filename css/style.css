@@ -495,6 +495,24 @@ body {
     padding: 3%;
 }
 
+/* Скрытие placeholder в стадии active */
+:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+/*---------------------------------------*/
+
+.contact-form-name:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.contact-form-email:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+.contact-form-message:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
 .contact-form-email {
     background-color: transparent;
     /*border-radius: 3px;*/
@@ -516,17 +534,29 @@ body {
 }
 
 .contact-form-send-button {
+    /*color: blueviolet;*/
     background-color: rgba(0, 153, 255, 0.164);
     font-size: 1.5vw;
     width: 50%;
     box-shadow: 0 0 1px #000;
 }
 
+.contact-form-send-button:hover {
+    color: #FFFF00;
+    
+}
+
+.contact-form-send-button:active {
+    font-size: 1.6vw;
+    color: white;
+    
+}
+
 /* Вращающееся облако слов */
 
 .sptag {
     /*border:'1px solid black';*/
-	/*background:red;*/
+    /*background:red;*/
     /*font-size: 1.5vw;*/
     margin: 7% 0% 0% 20%;
     padding: 0% 0% 0% 0%;
@@ -546,14 +576,16 @@ body {
     /*border: 1px solid red;*/
 }
 
-
+/*.sptag:active {
+    color: greenyellow;
+}*/
 
 /*.sptag a {
     text-decoration: none;
     font-weight: bold;
     font-family: Arial;
     color: "gray";*/
-    /*border: 1px solid red;*/
+/*border: 1px solid red;*/
 /*}*/
 
 /*
@@ -563,6 +595,6 @@ body {
 	font-family:Arial;
 	color:'gray';	
 }
-}*/
+*/
 
 /* ----------------------- */

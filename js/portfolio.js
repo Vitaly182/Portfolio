@@ -12,7 +12,7 @@ h1.onmouseleave = function () {
 
 
 Send_message.onmouseover = function () {
-    Send_message.style.background = "#CC99FE";
+    Send_message.style.background = "MediumPurple";
 };
 
 Send_message.onmouseleave = function () {
