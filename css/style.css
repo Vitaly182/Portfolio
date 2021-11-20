@@ -502,15 +502,15 @@ body {
 /*---------------------------------------*/
 
 .contact-form-name:focus {
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .contact-form-email:focus {
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .contact-form-message:focus {
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
 
 .contact-form-email {
@@ -535,21 +535,27 @@ body {
 
 .contact-form-send-button {
     /*color: blueviolet;*/
+    padding: 5% 0 5% 0;
     background-color: rgba(0, 153, 255, 0.164);
     font-size: 1.5vw;
-    width: 50%;
+    width: 70%;
     box-shadow: 0 0 1px #000;
+    transition: 2s;
 }
 
 .contact-form-send-button:hover {
-    color: #FFFF00;
-    
+    color: #ffff00;
+    transition: 1s;
+}
+
+.contact-form-send-button:hover:after {
+    content: " >>";
+    transition: 1s;
 }
 
 .contact-form-send-button:active {
     font-size: 1.6vw;
     color: white;
-    
 }
 
 /* Вращающееся облако слов */

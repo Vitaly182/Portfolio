@@ -60,7 +60,6 @@ function initSphere(numpnt, radius) {
         el.onmouseover = function () { mouseover(this); };
         el.onmouseout = function () { mouseout(this) };
         /*document.body.appendChild(el);*/
-        /*document.querySelector('section1').append(el);*/
         ech.insertAdjacentElement('afterEnd', el);
 
     }
@@ -86,28 +85,28 @@ function rotate(n, a, b, c) {
     0 sa  ca    -sb 0 cb      0  0   1 
 	
      *//*
-ox=x;oy=y;oz=z;
-if(c!=0)//around z
-{
-   x = ox*Math.cos(c)-oy*Math.sin(c);
-   y = ox*Math.sin(c)+oy*Math.cos(c);
-   z = z;
-} 
-ox=x;oy=y;oz=z;
-if(b!=0)//around y
-{
-   x = ox*Math.cos(b)+oz*Math.sin(b);
-   y = y;
-   z = -ox*Math.sin(b)+oz*Math.cos(b);
-}
-ox=x;oy=y;oz=z;
-if(a!=0)//around x
-{
-   x = x;
-   y = oy*Math.cos(a)-oz*Math.sin(a);
-   z = oy*Math.sin(a)+oz*Math.cos(a);
-}
-*/
+  ox=x;oy=y;oz=z;
+  if(c!=0)//around z
+  {
+  x = ox*Math.cos(c)-oy*Math.sin(c);
+  y = ox*Math.sin(c)+oy*Math.cos(c);
+  z = z;
+  } 
+  ox=x;oy=y;oz=z;
+  if(b!=0)//around y
+  {
+  x = ox*Math.cos(b)+oz*Math.sin(b);
+  y = y;
+  z = -ox*Math.sin(b)+oz*Math.cos(b);
+  }
+  ox=x;oy=y;oz=z;
+  if(a!=0)//around x
+  {
+  x = x;
+  y = oy*Math.cos(a)-oz*Math.sin(a);
+  z = oy*Math.sin(a)+oz*Math.cos(a);
+  }
+  */
     xyz[n] = { x: x, y: y, z: z };
     var el = did("pnt" + n);
     if (el) {
