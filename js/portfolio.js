@@ -10,6 +10,33 @@ h1.onmouseleave = function () {
     h1.style.color = '#FFFF00';
 };
 
+/* Действия по форме ввода - заказ звонка */
+function open_ask_to_call_back_form() {
+    document.getElementById("ask_to_call_back_form").style.display = "block";
+}
+function closeForm() {
+    document.getElementById("ask_to_call_back_form").style.display = "none";
+}
+/* Отлавливаем нажатие на кнопку вне формы и закрываем форму */
+document.body.onclick = function(e) {
+    var el = e ? e.target : window.event.target;
+    if (el.className === 'form-popup') document.getElementById("ask_to_call_back_form").style.display = "none";
+}
+
+/* Действия по блоку политика персональных данных */
+/*function open_policy_personal_data() {
+    document.getElementById("open-policy-personal-data-popup").style.display = "block";
+}
+function closeForm() {
+    document.getElementById("open-policy-personal-data-popup").style.display = "none";
+}
+/* Отлавливаем нажатие на кнопку вне формы и закрываем форму */
+/*document.body.onclick = function(e) {
+    var el = e ? e.target : window.event.target;
+    if (el.className === 'policy-personal-data-popup') document.getElementById("open-policy-personal-data-popup").style.display = "none";
+}*/
+
+
 
 Send_message.onmouseover = function () {
     Send_message.style.background = "MediumPurple";
