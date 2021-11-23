@@ -23,6 +23,11 @@ document.body.onclick = function(e) {
     if (el.className === 'form-popup') document.getElementById("ask_to_call_back_form").style.display = "none";
 }
 
+/* Открытие окна с картой */
+function go(addr) {
+    window.open(addr, "MyWin", 'width=1000vw, height=500vw, top='+((screen.height-500)/2)+',left='+((screen.width-1000)/2)+', resizable=yes, scrollbars=no, status=yes');
+}
+
 /* Действия по блоку политика персональных данных */
 /*function open_policy_personal_data() {
     document.getElementById("open-policy-personal-data-popup").style.display = "block";
