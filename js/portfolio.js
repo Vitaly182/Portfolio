@@ -25,7 +25,8 @@ document.body.onclick = function(e) {
 
 /* Открытие окна с картой */
 function go(addr) {
-    window.open(addr, "MyWin", 'width=1000vw, height=500vw, top='+((screen.height-500)/2)+',left='+((screen.width-1000)/2)+', resizable=yes, scrollbars=no, status=yes');
+    /*window.open(addr, "MyWin", 'width=1000vw, height=500vw, top='+((screen.height-500)/2)+',left='+((screen.width-1000)/2)+', resizable=yes, scrollbars=no, status=yes');*/
+    window.open(addr, "MyWin", 'width=900px, height=500px, top='+((screen.height-400)/2)+',left='+50+', resizable=yes, scrollbars=no, status=yes');
 }
 
 /* Действия по блоку политика персональных данных */
