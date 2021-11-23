@@ -147,6 +147,10 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1ffff', endColorstr='#c7c6ff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+body{
+    /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
+}
+
 .main-header {
     padding-top: 10px;
     padding-right: 20px;
@@ -286,6 +290,7 @@ body {
     /*border: 1px solid #000;*/
     position: absolute;
     left: 30%;
+    top: 32.3%;
     margin: 5%;
 }
 
@@ -369,8 +374,6 @@ body {
     position: absolute;
     top: -44%;
     left: 0;
-    bottom: 0%;
-    right: 0;
 }
 
 .dropdown-content a {
@@ -520,6 +523,8 @@ body {
     text-align: center;
     border: 5px solid #0000cc;
     position: absolute;
+    top: 32.3%;
+    left: 32.3%;
     border-radius: 1vw;
     padding: 2vw;
     background-color: white;
@@ -817,6 +822,8 @@ body {
     padding: 0% 0% 0% 0%;
     font-family: Arial;
     position: absolute;
+    top: 50%;
+    left: 50%;
     /*text-decoration: none;*/
     color: "gray";
     font-weight: bold;
