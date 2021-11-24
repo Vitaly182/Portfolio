@@ -149,6 +149,7 @@ body {
 
 body{
     /*font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;*/
+    position: relative;
 }
 
 .main-header {
@@ -184,6 +185,7 @@ body{
     box-shadow: 0 0 10px #ffef61;
     border-radius: 50%;
     transition: 1s;
+
     /*border: 1px solid rgba(255, 255, 255, 0.7);*/
 }
 
@@ -282,6 +284,7 @@ body{
     padding: 300px 0px 0px 0px;
     font-size: 4vw;
     color: MediumPurple;
+    position: relative;
 }
 
 .main-home {
@@ -350,6 +353,7 @@ body{
     height: 10%;
     border: 5px solid Black;
     border-radius: 30px 30px 30px 30px;
+    position: relative;
 }
 
 .dropdown-content {
@@ -372,8 +376,8 @@ body{
     overflow: auto;
     margin: auto;
     position: absolute;
-    top: -44%;
-    left: 0;
+    top: 10%;
+    left: 25%;
 }
 
 .dropdown-content a {
@@ -479,6 +483,7 @@ body{
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     transition: all 1s ease;
+    position: relative;
     /*border: 1px solid blueviolet;*/
 }
 
@@ -595,6 +600,7 @@ body{
     display: flex;
     justify-content: space-between;
     height: 25%;
+    position: relative;
     /*border: 1px solid blueviolet;*/
 }
 
@@ -795,16 +801,19 @@ body{
     width: 70%;
     box-shadow: 0 0 1px #000;
     transition: 2s;
+
 }
 
 .contact-form-send-button:hover {
+    padding: 5% 0 5% 0;
     color: #ffff00;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .contact-form-send-button:hover:after {
-    content: " >>";
-    transition: 1s;
+    content: ' =>';
+    font-size: 1.5vw;
+    transition: 0.5s;
 }
 
 .contact-form-send-button:active {
