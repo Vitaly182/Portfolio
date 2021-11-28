@@ -94,18 +94,27 @@ h6 {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /* Свойства width и height включают в себя значения полей и границ, но не отступов (margin).*/
   scroll-behavior: smooth;
+  /* плавная прокрутка */
 }
 
+/* Скроллбар */
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
   background-color: #000;
 }
 
+/* Ползунок у скроллбара */
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
   background-color: #fff;
+}
+
+/* Скрытие placeholder в стадии active */
+:focus::-webkit-input-placeholder {
+  color: transparent;
 }
 
 body {
@@ -167,7 +176,6 @@ body .main-header .header-h1 h1 {
   -webkit-box-flex: 3;
       -ms-flex-positive: 3;
           flex-grow: 3;
-  /*width: 100%;*/
   line-height: 150%;
   text-align: center;
   margin: 10px;
@@ -205,7 +213,6 @@ body .main-header .main-nav .main-nav--link {
   color: #7d6ca5;
 }
 body .main-header .main-nav .main-nav--link:hover {
-  /*color: rgb(114, 150, 110);*/
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   -webkit-transition: all 0.5s ease;
@@ -218,6 +225,7 @@ body .content {
   overflow-y: auto;
   overflow-x: hidden;
   display: block;
+  /* Вращающееся облако слов */
 }
 body .content .screen {
   width: 100vw;
@@ -280,8 +288,11 @@ body .content .screen-work .inthis .dropdown {
   margin: 3px 3px 3px 3px;
   vertical-align: top;
 }
-body .content .screen-work .inthis .dropdown .dropdown:hover .dropdown-content {
+body .content .screen-work .inthis .dropdown:hover .dropdown-content {
   display: block;
+}
+body .content .screen-work .inthis .dropdown:hover .dropbtn {
+  background-color: #3e8e41;
 }
 body .content .screen-work .inthis .dropdown .dropbtn {
   -webkit-box-flex: 3;
@@ -300,7 +311,7 @@ body .content .screen-work .inthis .dropdown .dropbtn {
   border-radius: 30px 30px 30px 30px;
   position: relative;
 }
-body .content .screen-work .inthis .dropdown-content {
+body .content .screen-work .inthis .dropdown .dropdown-content {
   display: none;
   background-color: Ivory;
   -webkit-box-shadow: 0px 8px 16px 0px black, inset 0px 1px 1px 0px black;
@@ -315,25 +326,28 @@ body .content .screen-work .inthis .dropdown-content {
   top: 10%;
   left: 25%;
 }
-body .content .screen-work .inthis .dropdown-content a {
+body .content .screen-work .inthis .dropdown .dropdown-content a {
   color: black;
   padding: 10px 0px 10px 0px;
   display: block;
   font-size: 1.5vw;
   height: 33%;
 }
-body .content .screen-work .inthis .dropdown-content a:hover {
+body .content .screen-work .inthis .dropdown .dropdown-content a:hover {
   background-color: NavajoWhite;
   border-radius: 10px 10px 10px 10px;
 }
-body .content .screen-work .inthis .dropdown:hover .dropdown-content {
-  display: block;
+body .content .sptag {
+  margin: 7% 0% 0% 20%;
+  padding: 0% 0% 0% 0%;
+  font-family: Arial;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: "gray";
+  font-weight: bold;
 }
-body .content .screen-work .inthis .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
-}
-
-.main-contact {
+body .content .main-contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,17 +355,14 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin: 300px 70px 0px 0px;
-  /*border: 1px solid rgba(255, 255, 255, 0.7);*/
 }
-
-.get-in-touch {
+body .content .main-contact .get-in-touch {
   display: block;
   -ms-flex-line-pack: center;
       align-content: center;
   width: 20%;
 }
-
-.get-in-touch-h2 {
+body .content .main-contact .get-in-touch .get-in-touch-h2 {
   font-size: 2vw;
   padding: 0 0 3vw 0;
   color: cornflowerblue;
@@ -359,8 +370,7 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   -webkit-text-decoration-color: rgba(251, 255, 0, 0.822);
           text-decoration-color: rgba(251, 255, 0, 0.822);
 }
-
-.get-in-touch-detail {
+body .content .main-contact .get-in-touch .get-in-touch-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -370,16 +380,14 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   vertical-align: middle;
   padding: 0 0 2vw 0;
 }
-
-.button-get-in-touch-logo-location {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location {
   background-color: transparent;
   margin: 0vw 0 0 0vw;
   width: 7%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
-
-.button-get-in-touch-logo-location:hover {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location:hover {
   border-radius: 30px 30px 30px 30px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -390,29 +398,24 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
-
-.get-in-touch-logo-location {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location .get-in-touch-logo-location {
   vertical-align: middle;
   position: relative;
   width: 100%;
 }
-
-.get-in-touch-location {
+body .content .main-contact .get-in-touch .get-in-touch-detail .get-in-touch-location {
   margin: 0 0 0 1vw;
   font-size: 1.5vw;
 }
-
-.button-get-in-touch-logo-phone {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-phone {
   background-color: transparent;
   margin: 0vw 0 0 0vw;
   width: 7%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
-  /*border: 1px solid blueviolet;*/
 }
-
-.button-get-in-touch-logo-phone:hover {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-phone:hover {
   border-radius: 30px 30px 30px 30px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -423,8 +426,12 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
-
-.form-popup {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-phone .get-in-touch-logo-phone {
+  vertical-align: middle;
+  position: relative;
+  width: 100%;
+}
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup {
   display: none;
   position: fixed;
   bottom: 0;
@@ -438,8 +445,7 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   left: 0;
   z-index: 99999;
 }
-
-.call-back-form {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form {
   left: 33%;
   top: 30%;
   width: 34vw;
@@ -453,8 +459,7 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   padding: 2vw;
   background-color: white;
 }
-
-.form-popup_line1 {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,30 +468,25 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
           justify-content: space-between;
   margin: 0 0 2vw 0;
 }
-
-.form-popup_line1 h2 {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line1 .form-popup_line1 h2 {
   color: #9f51e7;
   font-weight: bold;
   font-size: 1.5vw;
 }
-
-.btn-cancel {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line1 .btn-cancel {
   width: 5%;
   background-color: transparent;
 }
-
-.get-in-touch-logo-phone-close-form {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line1 .btn-cancel .get-in-touch-logo-phone-close-form {
   width: 100%;
 }
-
-.form-popup_line2 {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line2 {
   text-align: left;
   font-size: 1vw;
   color: gray;
   margin: 0 0 1vw 0;
 }
-
-.form-popup_line3 {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,8 +495,7 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
           justify-content: space-between;
   margin: 0 0 1vw 0;
 }
-
-.call_back_form-contact-form-name {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line3 .call_back_form-contact-form-name {
   background-color: ghostwhite;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
@@ -504,13 +503,11 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   width: 45%;
   padding: 3%;
 }
-
-.call_back_form-contact-form-name:focus {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line3 .call_back_form-contact-form-name:focus {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
-
-.call_back_form-contact-form-phone {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line3 .call_back_form-contact-form-phone {
   background-color: ghostwhite;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
@@ -518,13 +515,11 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   width: 45%;
   padding: 3%;
 }
-
-.call_back_form-contact-form-phone:focus {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line3 .call_back_form-contact-form-phone:focus {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
-
-.form-popup_line4 {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,54 +528,43 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
           justify-content: space-between;
   height: 25%;
   position: relative;
-  /*border: 1px solid blueviolet;*/
 }
-
-.btn-ask-to-call-back {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line4 .btn-ask-to-call-back {
   font-size: 1vw;
   color: honeydew;
   background-color: #9f51e7;
   width: 45%;
 }
-
-.btn-ask-to-call-back:hover {
-  /*color: blueviolet;*/
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line4 .btn-ask-to-call-back:hover {
   background-color: blueviolet;
 }
-
-.notice-personal-data {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line4 .notice-personal-data {
   text-align: left;
   font-size: 0.7vw;
   width: 45%;
   height: 100%;
-  /*border: 1px solid blueviolet;*/
 }
-
-.policy-personal-data {
-  background-color: transparent;
-  font-size: 0.7vw;
-  text-decoration: underline;
-  font-weight: bold;
-  /*border: 1px solid blueviolet;*/
-}
-
-#fix1 {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line4 .notice-personal-data #fix1 {
   width: 0px;
   background: #f00;
   display: inline-block;
   height: 50%;
   vertical-align: bottom;
 }
-
-#fix2 {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line4 .notice-personal-data #fix2 {
   width: 0px;
   background: #f00;
   display: inline-block;
   height: 50%;
   vertical-align: top;
 }
-
-.policy-personal-data-popup {
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line4 .policy-personal-data {
+  background-color: transparent;
+  font-size: 0.7vw;
+  text-decoration: underline;
+  font-weight: bold;
+}
+body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line4 .policy-personal-data-popup {
   display: none;
   position: fixed;
   bottom: 0;
@@ -594,31 +578,18 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   left: 0;
   z-index: 99999;
 }
-
-.get-in-touch-logo-phone {
-  vertical-align: middle;
-  position: relative;
-  width: 100%;
-  /*border: 1px solid blueviolet;*/
-}
-
-.get-in-touch-phone {
+body .content .main-contact .get-in-touch .get-in-touch-detail .get-in-touch-phone {
   margin: 0 0 0 1vw;
   font-size: 1.5vw;
-  /*width: 30%;*/
-  /*border: 1px solid blueviolet;*/
 }
-
-.button-get-in-touch-logo-email {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-email {
   background-color: transparent;
   margin: 0.2vw 0 0 0vw;
   width: 7%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  /*border: 1px solid blueviolet;*/
 }
-
-.button-get-in-touch-logo-email:hover {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-email:hover {
   border-radius: 30px 30px 30px 30px;
   -webkit-filter: invert(100%);
           filter: invert(100%);
@@ -629,32 +600,24 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
-
-.get-in-touch-logo-email {
+body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-email .get-in-touch-logo-email {
   vertical-align: middle;
   margin: 0vw 0 0 0vw;
   position: relative;
   width: 100%;
-  /*border: 1px solid blueviolet;*/
 }
-
-.get-in-touch-email {
+body .content .main-contact .get-in-touch .get-in-touch-detail .get-in-touch-email {
   margin: 0 0 0 1vw;
   font-size: 1.5vw;
-  /*width: 30%;*/
-  /*border: 1px solid blueviolet;*/
 }
-
-.contact-form {
+body .content .main-contact .contact-form {
   display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 25%;
-  /*border: 1px solid rgba(255, 255, 255, 0.7);*/
 }
-
-.contact-form-h2 {
+body .content .main-contact .contact-form .contact-form-h2 {
   font-size: 2vw;
   padding: 0 0 3vw 0;
   color: cornflowerblue;
@@ -662,8 +625,7 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   -webkit-text-decoration-color: rgba(251, 255, 0, 0.822);
           text-decoration-color: rgba(251, 255, 0, 0.822);
 }
-
-.contact-form-name {
+body .content .main-contact .contact-form .contact-form-name {
   background-color: transparent;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
@@ -672,13 +634,11 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   width: 100%;
   padding: 3%;
 }
-
-.contact-form-name:focus {
+body .content .main-contact .contact-form .contact-form-name:focus {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-
-.contact-form-email {
+body .content .main-contact .contact-form .contact-form-email {
   background-color: transparent;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
@@ -687,13 +647,11 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   width: 100%;
   padding: 3%;
 }
-
-.contact-form-email:focus {
+body .content .main-contact .contact-form .contact-form-email:focus {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-
-.contact-form-message {
+body .content .main-contact .contact-form .contact-form-message {
   background-color: transparent;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
@@ -702,19 +660,11 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   width: 100%;
   padding: 3% 3% 15% 3%;
 }
-
-.contact-form-message:focus {
+body .content .main-contact .contact-form .contact-form-message:focus {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
-
-/* Скрытие placeholder в стадии active */
-:focus::-webkit-input-placeholder {
-  color: transparent;
-}
-
-/*---------------------------------------*/
-.contact-form-send-button {
+body .content .main-contact .contact-form .contact-form-send-button {
   padding: 5% 0 5% 0;
   background-color: rgba(0, 153, 255, 0.164);
   font-size: 1.5vw;
@@ -724,34 +674,84 @@ body .content .screen-work .inthis .dropdown:hover .dropbtn {
   -webkit-transition: 2s;
   transition: 2s;
 }
-
-.contact-form-send-button:hover {
+body .content .main-contact .contact-form .contact-form-send-button:hover {
   padding: 5% 0 5% 0;
   color: #ffff00;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
-.contact-form-send-button:hover:after {
+body .content .main-contact .contact-form .contact-form-send-button:hover:after {
   content: " =>";
   font-size: 1.5vw;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-
-.contact-form-send-button:active {
+body .content .main-contact .contact-form .contact-form-send-button:active {
   font-size: 1.6vw;
   color: white;
 }
-
-/* Вращающееся облако слов */
-.sptag {
-  margin: 7% 0% 0% 20%;
-  padding: 0% 0% 0% 0%;
-  font-family: Arial;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: "gray";
-  font-weight: bold;
+body .content .main-contact .contact-form .contact-form-name {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 1px #000;
+          box-shadow: 0 0 1px #000;
+  margin: 0 0 5% 0;
+  font-size: 1.5vw;
+  width: 100%;
+  padding: 3%;
+}
+body .content .main-contact .contact-form .contact-form-name:focus {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+body .content .main-contact .contact-form .contact-form-email {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 1px #000;
+          box-shadow: 0 0 1px #000;
+  margin: 0 0 5% 0;
+  font-size: 1.5vw;
+  width: 100%;
+  padding: 3%;
+}
+body .content .main-contact .contact-form .contact-form-email:focus {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+body .content .main-contact .contact-form .contact-form-message {
+  background-color: transparent;
+  -webkit-box-shadow: 0 0 1px #000;
+          box-shadow: 0 0 1px #000;
+  margin: 0 0 5% 0;
+  font-size: 1.5vw;
+  width: 100%;
+  padding: 3% 3% 15% 3%;
+}
+body .content .main-contact .contact-form .contact-form-message:focus {
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+body .content .main-contact .contact-form .contact-form-send-button {
+  padding: 5% 0 5% 0;
+  background-color: rgba(0, 153, 255, 0.164);
+  font-size: 1.5vw;
+  width: 70%;
+  -webkit-box-shadow: 0 0 1px #000;
+          box-shadow: 0 0 1px #000;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+body .content .main-contact .contact-form .contact-form-send-button:hover {
+  padding: 5% 0 5% 0;
+  color: #ffff00;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .content .main-contact .contact-form .contact-form-send-button:hover:after {
+  content: " =>";
+  font-size: 1.5vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+body .content .main-contact .contact-form .contact-form-send-button:active {
+  font-size: 1.6vw;
+  color: white;
 }
