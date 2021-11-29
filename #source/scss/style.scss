@@ -11,17 +11,89 @@
 }
 
 @font-face {
-    font-family: 'Rabbid Highway Sign Bold Caps';
-    src: url('../fonts/RabbidHighwaySignBdCapsIta.eot');
-    src: url('../fonts/RabbidHighwaySignBdCapsIta.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/RabbidHighwaySignBdCapsIta.woff2') format('woff2'),
-        url('../fonts/RabbidHighwaySignBdCapsIta.woff') format('woff'),
-        url('../fonts/RabbidHighwaySignBdCapsIta.ttf') format('truetype'),
-        url('../fonts/RabbidHighwaySignBdCapsIta.svg#RabbidHighwaySignBdCapsIta') format('svg');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-ExtraLight.eot');
+    src: local('Pangram ExtraLight'), local('Pangram-ExtraLight'),
+        url('../fonts/Pangram-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pangram-ExtraLight.woff2') format('woff2'),
+        url('../fonts/Pangram-ExtraLight.woff') format('woff'),
+        url('../fonts/Pangram-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-Medium.eot');
+    src: local('Pangram Medium'), local('Pangram-Medium'),
+        url('../fonts/Pangram-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pangram-Medium.woff2') format('woff2'),
+        url('../fonts/Pangram-Medium.woff') format('woff'),
+        url('../fonts/Pangram-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-Regular.eot');
+    src: local('Pangram Regular'), local('Pangram-Regular'),
+        url('../fonts/Pangram-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pangram-Regular.woff2') format('woff2'),
+        url('../fonts/Pangram-Regular.woff') format('woff'),
+        url('../fonts/Pangram-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-Light.eot');
+    src: local('Pangram Light'), local('Pangram-Light'),
+        url('../fonts/Pangram-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pangram-Light.woff2') format('woff2'),
+        url('../fonts/Pangram-Light.woff') format('woff'),
+        url('../fonts/Pangram-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-Bold.eot');
+    src: local('Pangram Bold'), local('Pangram-Bold'),
+        url('../fonts/Pangram-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pangram-Bold.woff2') format('woff2'),
+        url('../fonts/Pangram-Bold.woff') format('woff'),
+        url('../fonts/Pangram-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-Black.eot');
+    src: local('Pangram Black'), local('Pangram-Black'),
+        url('../fonts/Pangram-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pangram-Black.woff2') format('woff2'),
+        url('../fonts/Pangram-Black.woff') format('woff'),
+        url('../fonts/Pangram-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pangram';
+    src: url('../fonts/Pangram-ExtraBold.eot');
+    src: local('Pangram ExtraBold'), local('Pangram-ExtraBold'),
+        url('../fonts/Pangram-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Pangram-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Pangram-ExtraBold.woff') format('woff'),
+        url('../fonts/Pangram-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
 
 
 /* НАСТАИВАЕМ СТИЛИ */
@@ -167,7 +239,7 @@ body {
     }
 
     .content {
-        /*font-family: 'Rabbid Highway Sign Bold Caps';*/
+        font-family: 'Pangram';
         width: 100vw;
         height: 100vh;
         overflow-y: auto;
@@ -232,8 +304,7 @@ body {
                             background-color: #3e8e41;
                         }
                     }   
-                    .dropbtn {
-                        font-family: 'Rabbid Highway Sign Bold Caps';
+                    .dropbtn {                        
                         -webkit-flex-grow: 3;
                         flex-grow: 3;
                         background-color: #4caf50;
@@ -284,7 +355,8 @@ body {
         .sptag {
             margin: 7% 0% 0% 20%;
             padding: 0% 0% 0% 0%;
-            font-family: Arial;
+            /*font-family: Arial;*/
+            font-family: 'Pangram';
             position: absolute;
             top: 50%;
             left: 50%;
@@ -299,8 +371,7 @@ body {
                         display: block;
                         align-content: center;
                         width: 25%;
-                        .get-in-touch-h2 {
-                            font-family: 'Rabbid Highway Sign Bold Caps';
+                        .get-in-touch-h2 {                                                    
                             font-size: 2.5vw;
                             padding: 0 0 3vw 0;
                             color: cornflowerblue;
@@ -522,8 +593,7 @@ body {
                         display: block;
                         justify-content: center;
                         width: 25%;
-                        .contact-form-h2 {
-                            font-family: 'Rabbid Highway Sign Bold Caps';
+                        .contact-form-h2 {                            
                             font-size: 2.5vw;
                             padding: 0 0 3vw 0;
                             color: cornflowerblue;
