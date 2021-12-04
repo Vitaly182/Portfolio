@@ -256,12 +256,6 @@ body .main-header .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-size: 2vw;
 }
 body .main-header .main-nav .main-nav--link {
@@ -330,8 +324,8 @@ body .content .screen-work .inthis {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -434,10 +428,6 @@ body .content .main-contact .get-in-touch .get-in-touch-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  vertical-align: middle;
   padding: 0 0 2vw 0;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location {

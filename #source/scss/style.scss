@@ -200,6 +200,7 @@ body {
             font-family: 'Conv_Bleeding Cowboys';
             display: flex;
             width: 70%;
+            //border: 1px solid blueviolet;
         }
         .header-h1 h1 {
             -webkit-flex-grow: 3;
@@ -222,13 +223,15 @@ body {
         .main-nav {
             font-family: 'Conv_Bleeding Cowboys';
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            //justify-content: space-between;
+            //align-items: center;
             font-size: 2vw;
+            //border: 1px solid blueviolet;
             .main-nav--link {
                 @include transition(0.5s, 0.5s, 0.5s);
                 margin-left: 3vw;
                 color: rgb(125, 108, 165);
+                //border: 1px solid blueviolet;
                 &:hover {
                     @include transform(1.1, 1.1, 1.1, 1.1);
                     @include transition(0.5s, 0.5s, 0.5s);
@@ -237,7 +240,6 @@ body {
             }
         }
     }
-
     .content {
         font-family: 'Pangram';
         width: 100vw;
@@ -285,7 +287,7 @@ body {
             padding: 400px 0px 0px 0px;
             .inthis {
                 display: flex;
-                flex-wrap: wrap;
+                flex-wrap: nowrap;
                 justify-content: center;
                 text-align: center;
                 height: 500px;
@@ -345,11 +347,8 @@ body {
                             border-radius: 10px 10px 10px 10px;
                         }
                     }                                       
-                }
-                
-                
-            }
-            
+                }        
+            }          
         }
         /* Вращающееся облако слов */
         .sptag {
@@ -367,10 +366,12 @@ body {
                     display: flex;
                     justify-content: flex-end;
                     margin: 300px 70px 0px 00px;
+                    //border: 1px solid blueviolet;
                     .get-in-touch {
                         display: block;
                         align-content: center;
                         width: 25%;
+                        //border: 1px solid blueviolet;
                         .get-in-touch-h2 {                                                    
                             font-size: 2.5vw;
                             padding: 0 0 3vw 0;
@@ -380,9 +381,10 @@ body {
                         }
                         .get-in-touch-detail {
                             display: flex;
-                            align-items: center;
-                            vertical-align: middle;
+                            // align-items: center;
+                            // vertical-align: middle;
                             padding: 0 0 2vw 0;
+                            //border: 1px solid blueviolet;
                             .button-get-in-touch-logo-location {
                                 background-color: transparent;
                                 margin: 0vw 0 0 0vw;
@@ -456,6 +458,7 @@ body {
                                         display: flex;
                                         justify-content: space-between;
                                         margin: 0 0 2vw 0;
+                                        //border: 1px solid blueviolet;
                                         h2 {
                                             color: #9f51e7;
                                             font-weight: bold;
@@ -468,7 +471,6 @@ body {
                                                 width: 100%;
                                             }
                                         }
-                                        
                                     }
                                     .form-popup_line2 {
                                         text-align: left;
@@ -480,6 +482,7 @@ body {
                                         display: flex;
                                         justify-content: space-between;
                                         margin: 0 0 1vw 0;
+                                        // border: 1px solid blueviolet;
                                         .call_back_form-contact-form-name {    
                                             background-color: ghostwhite;
                                             box-shadow: 0 0 1px #000;
@@ -586,7 +589,6 @@ body {
                                 margin: 0 0 0 1vw;
                                 font-size: 1.5vw;
                             }
-                            
                         }
                     }
                     .contact-form {
