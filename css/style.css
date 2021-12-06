@@ -382,8 +382,16 @@ body .content .screen-work .inthis .dropdown .dropdown-content {
 }
 body .content .screen-work .inthis .dropdown .dropdown-content a {
   color: black;
-  padding: 10px 0px 10px 0px;
-  display: block;
+  padding: 0.5vw 0px 0.5vw 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 1vw;
   height: 33%;
 }
@@ -429,14 +437,38 @@ body .content .main-contact .get-in-touch .get-in-touch-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 2vw 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 1.5vw 0;
+}
+body .content .main-contact .get-in-touch .get-in-touch-detail .get-in-touch-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  max-width: 1wv;
+  width: 10%;
+  position: relative;
+}
+body .content .main-contact .get-in-touch .get-in-touch-detail .get-in-touch-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 5px 0 0 0;
+  width: 80%;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location {
   background-color: transparent;
-  margin: 0vw 0 0 0vw;
-  width: 7%;
+  margin: 0 0 0 0;
+  width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  position: relative;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location:hover {
   border-radius: 30px 30px 30px 30px;
@@ -444,10 +476,10 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
           filter: invert(100%);
   background-color: green;
   mix-blend-mode: hue;
-  -webkit-transform: scale(2.1);
-  transform: scale(2.1);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location .get-in-touch-logo-location {
   vertical-align: middle;
@@ -461,7 +493,7 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .get-in-touch-loc
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-phone {
   background-color: transparent;
   margin: 0vw 0 0 0vw;
-  width: 7%;
+  width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
@@ -472,10 +504,10 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
           filter: invert(100%);
   background-color: green;
   mix-blend-mode: hue;
-  -webkit-transform: scale(2.1);
-  transform: scale(2.1);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-phone .get-in-touch-logo-phone {
   vertical-align: middle;
@@ -491,7 +523,7 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup {
   background: rgba(102, 102, 102, 0.5);
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 99999;
@@ -500,12 +532,12 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call
   left: 33%;
   top: 30%;
   width: 34vw;
-  height: 17vw;
+  height: 20vw;
   text-align: center;
   border: 5px solid #0000cc;
-  position: absolute;
-  top: 32.3%;
-  left: 32.3%;
+  position: fixed;
+  top: 33%;
+  left: 33%;
   border-radius: 1vw;
   padding: 2vw;
   background-color: white;
@@ -636,7 +668,7 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .get-in-touch-pho
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-email {
   background-color: transparent;
   margin: 0.2vw 0 0 0vw;
-  width: 7%;
+  width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
 }
@@ -646,10 +678,10 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
           filter: invert(100%);
   background-color: green;
   mix-blend-mode: hue;
-  -webkit-transform: scale(2.1);
-  transform: scale(2.1);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-email .get-in-touch-logo-email {
   vertical-align: middle;
