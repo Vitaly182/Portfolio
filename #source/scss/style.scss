@@ -302,13 +302,16 @@ body {
                             display: block;
                         }
                         .dropbtn {
-                            background-color: #3e8e41;
+                            //background-color: #3e8e41;
+                            background-color: #CC99FE;
+                            color: black;
                         }
                     }   
                     .dropbtn {                        
                         -webkit-flex-grow: 3;
                         flex-grow: 3;
-                        background-color: #4caf50;
+                        //background-color: #4caf50;
+                        background-color: MediumPurple;
                         color: white;
                         font-size: 1.2vw;
                         max-width: 250px;
@@ -317,7 +320,7 @@ body {
                         min-height: 5px;
                         width: 80%;
                         height: 10%;
-                        border: 5px solid Black;
+                        border: 3px solid Black;
                         border-radius: 30px 30px 30px 30px;
                         position: relative;                     
                     }  
