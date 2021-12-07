@@ -4,7 +4,8 @@ var num_pnt;
 var za = 0;
 var ADA = (Math.PI / 180), ada = ADA;
 var is_ie = (document.all && !window.opera);
-var CT = 350, CL = 100, CZ = 300, _Rad = 200, _cnt = 12, OB = 0.15, FB = 25, FE = 12;
+var CT = 350, CL = 100, CZ = 300, _cnt = 12, OB = 0.15, FB = 2, FE = 1;
+var _Rad = 300 * document.documentElement.clientWidth/1920
 var to = null;
 
 function grad(v) {
@@ -55,7 +56,7 @@ function initSphere(numpnt, radius) {
         el.n = n;
         el.className = "sptag";
         setStyles(el, {
-            left: (CL + x - el.style.width / 2) + "px", top: (CT + y) + "px", zIndex: z
+            left: (CL + x - el.style.width / 2) + "vw", top: (CT + y) + "vw", zIndex: z
         });
         el.onmouseover = function () { mouseover(this); };
         el.onmouseout = function () { mouseout(this) };
@@ -116,7 +117,7 @@ function rotate(n, a, b, c) {
         var o = (z + _Rad) / (2 * _Rad);
         var fs = FB + o * FE;
         o += OB;
-        setStyles(el, { left: x + CL - el.style.width / 2 + "px", top: y + CT + "px", zIndex: (CZ + z) * 2, fontSize: fs + "px" });
+        setStyles(el, { left: x + CL - el.style.width / 2 + "px", top: y + CT + "px", zIndex: (CZ + z) * 2, fontSize: fs + "vw" });
         setStyles(el, { opacity: o });
     }
 }
