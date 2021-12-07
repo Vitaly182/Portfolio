@@ -294,28 +294,42 @@ body .content .screen {
   z-index: 1;
 }
 body .content .screen-home {
-  padding: 300px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 0;
   font-size: 4vw;
   color: MediumPurple;
   position: relative;
 }
 body .content .screen-home .main-home {
   display: inline-block;
-  position: absolute;
-  left: 30%;
-  top: 32.3%;
-  margin: 5%;
+  position: relative;
+  max-height: 19%;
+  left: 40%;
+  top: 0%;
+  margin: 3vw 0 0 0;
 }
 body .content .screen-home .main-home .h2-span {
   color: Red;
   font-size: 4vw;
 }
-body .content .screen-home .about-photo {
+body .content .screen-home .main-photo {
   max-width: 10%;
+  max-height: 19%;
+}
+body .content .screen-home .main-photo .about-photo {
+  max-width: 100%;
   height: auto;
   border-radius: 15%;
   float: right;
-  margin: 3% 5% 0px 0px;
+  margin: 0 0 0 0;
 }
 body .content .screen-work {
   padding: 400px 0px 0px 0px;
@@ -532,7 +546,7 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call
   left: 33%;
   top: 30%;
   width: 34vw;
-  height: 20vw;
+  height: 25vw;
   text-align: center;
   border: 5px solid #0000cc;
   position: fixed;
@@ -549,7 +563,7 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 2vw 0;
+  margin: 0 0 3vw 0;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line1 h2 {
   color: #9f51e7;
@@ -576,7 +590,7 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 0 1vw 0;
+  margin: 0 0 3vw 0;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .form-popup .call-back-form .form-popup_line3 .call_back_form-contact-form-name {
   background-color: ghostwhite;

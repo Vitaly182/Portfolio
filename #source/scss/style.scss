@@ -259,27 +259,38 @@ body {
             z-index: 1;
         }
         .screen-home {
-            padding: 300px 0px 0px 0px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0 0 0;
             font-size: 4vw;
             color: MediumPurple;
             position: relative;
+            //border: 1px solid blueviolet;
             .main-home {
                 display: inline-block;
-                position: absolute;
-                left: 30%;
-                top: 32.3%;
-                margin: 5%;
+                position: relative;
+                max-height: 19%;
+                left: 40%;
+                top: 0%;
+                margin: 3vw 0 0 0;
+                //border: 1px solid blueviolet;
                 .h2-span {
                     color: Red;
                     font-size: 4vw;
                 }
             }
-            .about-photo {
+            .main-photo{
+                //border: 1px solid blueviolet;
                 max-width: 10%;
-                height: auto;
-                border-radius: 15%;
-                float: right;
-                margin: 3% 5% 0px 0px;
+                max-height: 19%;
+                .about-photo {                
+                    max-width: 100%;
+                    height: auto;
+                    border-radius: 15%;
+                    float: right;
+                    margin: 0 0 0 0;
+                }
             }
         }
         .screen-work {
@@ -467,7 +478,7 @@ body {
                                         left: 33%;
                                         top: 30%;
                                         width: 34vw;
-                                        height: 20vw;
+                                        height: 25vw;
                                         text-align: center;
                                         border: 5px solid #0000cc;
                                         position: fixed;
@@ -479,7 +490,7 @@ body {
                                         .form-popup_line1 {
                                             display: flex;
                                             justify-content: space-between;
-                                            margin: 0 0 2vw 0;
+                                            margin: 0 0 3vw 0;
                                             //border: 1px solid blueviolet;
                                             h2 {
                                                 color: #9f51e7;
@@ -499,11 +510,12 @@ body {
                                             font-size: 1vw;
                                             color: gray;
                                             margin: 0 0 1vw 0;
+                                            //border: 1px solid blueviolet;
                                         }                                    
                                         .form-popup_line3 {
                                             display: flex;
                                             justify-content: space-between;
-                                            margin: 0 0 1vw 0;
+                                            margin: 0 0 3vw 0;
                                             // border: 1px solid blueviolet;
                                             .call_back_form-contact-form-name {    
                                                 background-color: ghostwhite;
