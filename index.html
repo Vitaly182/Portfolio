@@ -36,12 +36,12 @@
         <section id="home" class="screen screen-home">
 
             <div class="main-home">
-                <h2 class="h2" id="h2">Hi! I'm <span class="h2-span">Vitaly Beketov</span></h2>
-                <h2 class="h2" id="h2">Full-stack Developer</h2>
+                <h2 class="h2">Hi! I'm <span class="h2-span">Vitaly Beketov</span></h2>
+                <h2 class="h2">Full-stack Developer</h2>
             </div>
 
             <div  class="main-photo">
-                <img class="about-photo" src="img/Photo.jpg">
+                <img class="about-photo" src="img/Photo.jpg" alt="Logotype">
             </div>
 
 
@@ -143,9 +143,9 @@
 
                         <div class="get-in-touch-logo">
                             <button class="button-get-in-touch-logo-location" >
-                                <div class="link-location" onclick="go('https://www.google.ru/maps/place/@55.669581,37.7855223,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a5a738fa419:0x7c347d506b52311f!8m2!3d55.7539303!4d37.620795'); return false;">
+                                <span class="link-location" onclick="go('https://www.google.ru/maps/place/@55.669581,37.7855223,17z/data=!3m1!4b1!4m5!3m4!1s0x46b54a5a738fa419:0x7c347d506b52311f!8m2!3d55.7539303!4d37.620795'); return false;">
                                     <img id="logo-location" class="get-in-touch-logo-location" src="img/logo-location.png" alt="Logotype">
-                                </div>
+                                </span>
                             </button>
                         </div>
                         <div class="get-in-touch-text">
@@ -240,8 +240,8 @@
                     </div>
 
                     <div class="get-in-touch-detail">
-                        <div class="get-in-touch-logo">
-                            <button class="button-get-in-touch-logo-email"><a href="mailto:someone@yoursite.com"><img id="logo-mail" class="get-in-touch-logo-email" src="img/logo-email.png" alt="Logotype"></a></button>
+                        <div class="get-in-touch-logo">                            
+                            <a href="mailto:someone@yoursite.com" class="button-get-in-touch-logo-email"><img id="logo-mail" class="get-in-touch-logo-email" src="img/logo-email.png" alt="Logotype"></a>
                         </div>
                         <div class="get-in-touch-text">
                             <h3 class="get-in-touch-email">w.182@mail.ru</h3>
@@ -263,8 +263,7 @@
                             name="emailaddress" value="">
                     </div>
                     <div>
-                        <textarea class="contact-form-message" placeholder="Message for me" tabindex="3" name="message"
-                            type="text"></textarea>
+                        <textarea class="contact-form-message" placeholder="Message for me" tabindex="3" name="message"></textarea>
                     </div>
                     <div>
                         <button id="Send_message" class="contact-form-send-button" tabindex="4" type="submit">Send
@@ -289,7 +288,7 @@
     <footer></footer>
 
     <script src="js/portfolio.js"></script>
-    <script type="text/javascript" src="js/sphere.js"></script>
+    <script src="js/sphere.js"></script>
     <script>
         taga = [{ h: "#", t: "HTML" }, { h: "#", t: "CSS" }, { h: "#", t: "Javascript" }, { h: "#", t: "Git" }, { h: "#", t: "SQL" },
         { h: "#", t: "REST" }, { h: "#", t: "Django" }, { h: "#", t: "Python" }, { h: "#", t: "NLP" }, { h: "#", t: "Machine Learning" },
