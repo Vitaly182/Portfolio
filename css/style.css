@@ -484,6 +484,12 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
   transition: all 1s ease;
   position: relative;
 }
+@media (max-width: 992px) {
+  body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location:hover {
   border-radius: 30px 30px 30px 30px;
   -webkit-filter: invert(100%);
@@ -511,6 +517,12 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
+}
+@media (max-width: 992px) {
+  body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-phone {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-phone:hover {
   border-radius: 30px 30px 30px 30px;
@@ -685,6 +697,12 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
   width: 100%;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+}
+@media (max-width: 992px) {
+  body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-email {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-email:hover {
   border-radius: 30px 30px 30px 30px;

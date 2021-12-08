@@ -418,6 +418,9 @@ body {
                                     background-color: transparent;
                                     margin: 0 0 0 0;
                                     width: 100%;
+                                    @media (max-width: 992px){
+                                        @include transform(1.5, 1.5, 1.5, 1.5);
+                                    }
                                     @include transition(1s, 1s, 1s);
                                     position: relative;
                                     &:hover {
@@ -444,6 +447,9 @@ body {
                                     background-color: transparent;
                                     margin: 0vw 0 0 0vw;
                                     width: 100%;
+                                    @media (max-width: 992px){
+                                        @include transform(1.5, 1.5, 1.5, 1.5);
+                                    }
                                     @include transition(1s, 1s, 1s);
                                     position: relative;
                                     //border: 1px solid blueviolet;
@@ -604,6 +610,9 @@ body {
                                     background-color: transparent;
                                     margin: 0.2vw 0 0 0vw;
                                     width: 100%;
+                                    @media (max-width: 992px){
+                                        @include transform(1.5, 1.5, 1.5, 1.5);
+                                    }
                                     @include transition(1s, 1s, 1s);
                                     //border: 1px solid blueviolet;
                                     &:hover {
