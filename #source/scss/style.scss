@@ -403,7 +403,7 @@ body {
                                 display: flex;
                                 justify-content: space-around;
                                 max-width: 1wv;
-                                width: 10%;
+                                width: 15%;
                                 //border: 1px solid blueviolet;
                                 position: relative;
                             }
@@ -426,7 +426,7 @@ body {
                                     &:hover {
                                         border-radius: 30px 30px 30px 30px;
                                         filter: invert(100%);
-                                        background-color: green;
+                                        background-color: yellow;
                                         mix-blend-mode: hue;
                                         @include transform(1.5, 1.5, 1.5, 1.5);
                                         @include transition(1s, 1s, 1s);
@@ -441,7 +441,7 @@ body {
                                 .get-in-touch-location {
                                     margin: 0 0 0 1vw;
                                     font-size: 1.5vw;
-                                    //border: 1px solid blueviolet;
+                                    // border: 1px solid blueviolet;
                                 }
                                 .button-get-in-touch-logo-phone {
                                     background-color: transparent;
@@ -452,11 +452,11 @@ body {
                                     }
                                     @include transition(1s, 1s, 1s);
                                     position: relative;
-                                    //border: 1px solid blueviolet;
+                                    // border: 1px solid blueviolet;
                                     &:hover {
                                         border-radius: 30px 30px 30px 30px;
                                         filter: invert(100%);
-                                        background-color: green;
+                                        background-color: yellow;
                                         mix-blend-mode: hue;
                                         @include transform(1.5, 1.5, 1.5, 1.5);
                                         @include transition(1s, 1s, 1s);
@@ -618,7 +618,7 @@ body {
                                     &:hover {
                                         border-radius: 30px 30px 30px 30px;
                                         filter: invert(100%);
-                                        background-color: green;
+                                        background-color: yellow;
                                         mix-blend-mode: hue;
                                         @include transform(1.5, 1.5, 1.5, 1.5);
                                         @include transition(1s, 1s, 1s);
