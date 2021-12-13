@@ -498,8 +498,8 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
   mix-blend-mode: hue;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-location .get-in-touch-logo-location {
   vertical-align: middle;
@@ -532,8 +532,8 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
   mix-blend-mode: hue;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-phone .get-in-touch-logo-phone {
   vertical-align: middle;
@@ -712,8 +712,8 @@ body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-to
   mix-blend-mode: hue;
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 body .content .main-contact .get-in-touch .get-in-touch-detail .button-get-in-touch-logo-email .get-in-touch-logo-email {
   vertical-align: middle;
@@ -786,85 +786,26 @@ body .content .main-contact .contact-form .contact-form-send-button {
   width: 70%;
   -webkit-box-shadow: 0 0 1px #000;
           box-shadow: 0 0 1px #000;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 body .content .main-contact .contact-form .contact-form-send-button:hover {
   padding: 5% 0 5% 0;
   color: #ffff00;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+body .content .main-contact .contact-form .contact-form-send-button:hover:before {
+  content: "<= ";
+  font-size: 1.5vw;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 body .content .main-contact .contact-form .contact-form-send-button:hover:after {
   content: " =>";
   font-size: 1.5vw;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-body .content .main-contact .contact-form .contact-form-send-button:active {
-  font-size: 1.6vw;
-  color: white;
-}
-body .content .main-contact .contact-form .contact-form-name {
-  background-color: transparent;
-  -webkit-box-shadow: 0 0 1px #000;
-          box-shadow: 0 0 1px #000;
-  margin: 0 0 5% 0;
-  font-size: 1.5vw;
-  width: 100%;
-  padding: 3%;
-}
-body .content .main-contact .contact-form .contact-form-name:focus {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-body .content .main-contact .contact-form .contact-form-email {
-  background-color: transparent;
-  -webkit-box-shadow: 0 0 1px #000;
-          box-shadow: 0 0 1px #000;
-  margin: 0 0 5% 0;
-  font-size: 1.5vw;
-  width: 100%;
-  padding: 3%;
-}
-body .content .main-contact .contact-form .contact-form-email:focus {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-body .content .main-contact .contact-form .contact-form-message {
-  background-color: transparent;
-  -webkit-box-shadow: 0 0 1px #000;
-          box-shadow: 0 0 1px #000;
-  margin: 0 0 5% 0;
-  font-size: 1.5vw;
-  width: 100%;
-  padding: 3% 3% 15% 3%;
-}
-body .content .main-contact .contact-form .contact-form-message:focus {
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-}
-body .content .main-contact .contact-form .contact-form-send-button {
-  padding: 5% 0 5% 0;
-  background-color: rgba(0, 153, 255, 0.164);
-  font-size: 1.5vw;
-  width: 70%;
-  -webkit-box-shadow: 0 0 1px #000;
-          box-shadow: 0 0 1px #000;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-body .content .main-contact .contact-form .contact-form-send-button:hover {
-  padding: 5% 0 5% 0;
-  color: #ffff00;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-body .content .main-contact .contact-form .contact-form-send-button:hover:after {
-  content: " =>";
-  font-size: 1.5vw;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 body .content .main-contact .contact-form .contact-form-send-button:active {
   font-size: 1.6vw;

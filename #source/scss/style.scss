@@ -429,7 +429,7 @@ body {
                                         background-color: green;
                                         mix-blend-mode: hue;
                                         @include transform(1.5, 1.5, 1.5, 1.5);
-                                        @include transition(0.5s, 0.5s, 0.5s);
+                                        @include transition(1s, 1s, 1s);
                                     }
                                     .get-in-touch-logo-location {
                                         vertical-align: middle;
@@ -459,7 +459,7 @@ body {
                                         background-color: green;
                                         mix-blend-mode: hue;
                                         @include transform(1.5, 1.5, 1.5, 1.5);
-                                        @include transition(0.5s, 0.5s, 0.5s);
+                                        @include transition(1s, 1s, 1s);
                                     }
                                     .get-in-touch-logo-phone {
                                         vertical-align: middle;
@@ -621,7 +621,7 @@ body {
                                         background-color: green;
                                         mix-blend-mode: hue;
                                         @include transform(1.5, 1.5, 1.5, 1.5);
-                                        @include transition(0.5s, 0.5s, 0.5s);
+                                        @include transition(1s, 1s, 1s);
                                     }
                                     .get-in-touch-logo-email {
                                         vertical-align: middle;
@@ -687,71 +687,21 @@ body {
                             font-size: 1.5vw;
                             width: 70%;
                             box-shadow: 0 0 1px #000;
-                            transition: 2s;
+                            transition: 1s;
                             &:hover {
                                 padding: 5% 0 5% 0;
                                 color: #ffff00;
-                                transition: 0.5s;
+                                transition: 1s;
                             }
+                            &:hover:before {
+                                content: '<= ';
+                                font-size: 1.5vw;
+                                transition: 1s;
+                            }    
                             &:hover:after {
                                 content: ' =>';
                                 font-size: 1.5vw;
-                                transition: 0.5s;
-                            }                                
-                            &:active {
-                                font-size: 1.6vw;
-                                color: white;
-                            }                              
-                        }
-                        .contact-form-name {
-                            background-color: transparent;
-                            box-shadow: 0 0 1px #000;
-                            margin: 0 0 5% 0;
-                            font-size: 1.5vw;
-                            width: 100%;
-                            padding: 3%;
-                            &:focus {
-                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-                            }
-                        }
-                        .contact-form-email {
-                            background-color: transparent;
-                            box-shadow: 0 0 1px #000;
-                            margin: 0 0 5% 0;
-                            font-size: 1.5vw;
-                            width: 100%;
-                            padding: 3%;
-                            &:focus {
-                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-                            }
-                        }
-                        .contact-form-message {
-                            background-color: transparent;
-                            box-shadow: 0 0 1px #000;
-                            margin: 0 0 5% 0;
-                            font-size: 1.5vw;
-                            width: 100%;
-                            padding: 3% 3% 15% 3%;
-                            &:focus {
-                                box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
-                            }
-                        }
-                        .contact-form-send-button {
-                            padding: 5% 0 5% 0;
-                            background-color: rgba(0, 153, 255, 0.164);
-                            font-size: 1.5vw;
-                            width: 70%;
-                            box-shadow: 0 0 1px #000;
-                            transition: 2s;
-                            &:hover {
-                                padding: 5% 0 5% 0;
-                                color: #ffff00;
-                                transition: 0.5s;
-                            }
-                            &:hover:after {
-                                content: ' =>';
-                                font-size: 1.5vw;
-                                transition: 0.5s;
+                                transition: 1s;
                             }                                
                             &:active {
                                 font-size: 1.6vw;
