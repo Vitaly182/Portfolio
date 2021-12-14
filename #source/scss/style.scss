@@ -431,7 +431,7 @@ body {
                                     @include transition_all(1s, 1s, 1s);
                                     position: relative;
                                     &:hover {
-                                        border-radius: 30px 30px 30px 30px;
+                                        border-radius: 50px 50px 50px 50px;
                                         filter: invert(100%);
                                         background-color: yellow;
                                         mix-blend-mode: hue;
@@ -461,7 +461,7 @@ body {
                                     position: relative;
                                     // border: 1px solid blueviolet;
                                     &:hover {
-                                        border-radius: 30px 30px 30px 30px;
+                                        border-radius: 50px 50px 50px 50px;
                                         filter: invert(100%);
                                         background-color: yellow;
                                         mix-blend-mode: hue;
@@ -626,7 +626,7 @@ body {
                                     @include transition_all(1s, 1s, 1s);
                                     //border: 1px solid blueviolet;
                                     &:hover {
-                                        border-radius: 30px 30px 30px 30px;
+                                        border-radius: 50px 50px 50px 50px;
                                         filter: invert(100%);
                                         background-color: yellow;
                                         mix-blend-mode: hue;
