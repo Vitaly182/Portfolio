@@ -13,14 +13,27 @@ h1.onmouseleave = function () {
 /* Действия по форме ввода - заказ звонка */
 function open_ask_to_call_back_form() {
     document.getElementById("ask_to_call_back_form").style.display = "block";
+    window.setTimeout(function(){
+        ask_to_call_back_form.style.opacity = 1;
+        ask_to_call_back_form.style.transform = 'scale(1)';
+    }, 0);
 }
 function closeForm() {
-    document.getElementById("ask_to_call_back_form").style.display = "none";
+    ask_to_call_back_form.style.opacity = 0;
+    ask_to_call_back_form.style.transform = 'scale(0)';
+    window.setTimeout(function(){
+        document.getElementById("ask_to_call_back_form").style.display = "none";
+
+    }, 1000); 
 }
 /* Отлавливаем нажатие на кнопку вне формы и закрываем форму */
 document.body.onclick = function(e) {
     var el = e ? e.target : window.event.target;
-    if (el.className === 'form-popup') document.getElementById("ask_to_call_back_form").style.display = "none";
+    if (el.className === 'form-popup')
+    window.setTimeout(function(){ 
+        ask_to_call_back_form.style.opacity = 0;
+        ask_to_call_back_form.style.transform = 'scale(0)';
+    }, 0);
 }
 
 /* Открытие окна с картой */
