@@ -212,7 +212,7 @@ body {
             border-radius: 15px;
             box-shadow: 0 0 10px #000;
             &:hover {
-                border-radius: 100%;
+                border-radius: 50%;
                 @include transition_all(2s, 2s, 2s);
             }        
             &:not(:hover) {
@@ -334,7 +334,7 @@ body {
                         width: 80%;
                         height: 10%;
                         border: 3px solid Black;
-                        border-radius: 30px 30px 30px 30px;
+                        border-radius: 30px;
                         position: relative;    
                         @include transition_all(1s, 1s, 1s);       
                     }  
@@ -344,7 +344,7 @@ body {
                         background-color: Ivory;
                         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 20), inset 0px 1px 1px 0px rgba(0, 0, 0, 2);
                         border: 2px solid Black;
-                        border-radius: 10px 10px 10px 10px;
+                        border-radius: 10px;
                         width: 50%;
                         height: 25%;
                         overflow: auto;
@@ -365,7 +365,7 @@ body {
                         @include transition_all(1s, 1s, 1s);
                         &:hover {
                             background-color: NavajoWhite;
-                            border-radius: 10px 10px 10px 10px;
+                            border-radius: 10px;
                             @include transition_all(1s, 1s, 1s); 
                         }
                     }                                       
@@ -423,15 +423,16 @@ body {
                             }
                                 .button-get-in-touch-logo-location {
                                     background-color: transparent;
+                                    padding: 10%;
                                     margin: 0 0 0 0;
-                                    width: 100%;
+                                    width: 120%;
                                     @media (max-width: 992px){
                                         @include transform_scale(1.5, 1.5, 1.5, 1.5);
                                     }
                                     @include transition_all(1s, 1s, 1s);
                                     position: relative;
                                     &:hover {
-                                        border-radius: 50px 50px 50px 50px;
+                                        border-radius: 50%;
                                         filter: invert(100%);
                                         background-color: yellow;
                                         mix-blend-mode: hue;
@@ -452,8 +453,9 @@ body {
                                 }
                                 .button-get-in-touch-logo-phone {
                                     background-color: transparent;
+                                    padding: 10%;
                                     margin: 0vw 0 0 0vw;
-                                    width: 100%;
+                                    width: 120%;
                                     @media (max-width: 992px){
                                         @include transform_scale(1.5, 1.5, 1.5, 1.5);
                                     }
@@ -461,7 +463,7 @@ body {
                                     position: relative;
                                     // border: 1px solid blueviolet;
                                     &:hover {
-                                        border-radius: 50px 50px 50px 50px;
+                                        border-radius: 50%;
                                         filter: invert(100%);
                                         background-color: yellow;
                                         mix-blend-mode: hue;
@@ -490,15 +492,13 @@ body {
                                     top: 0;
                                     left: 0;
                                     z-index: 99999;
-                                    .call-back-form {
-                                        left: 33%;
-                                        top: 30%;
+                                    .call-back-form {                                        
                                         width: 34vw;
                                         height: 25vw;
                                         text-align: center;
                                         border: 5px solid #0000cc;
                                         position: fixed;
-                                        top: 33%;
+                                        top: 32%;
                                         left: 33%;
                                         border-radius: 1vw;
                                         padding: 2vw;
@@ -618,15 +618,16 @@ body {
                                 }
                                 .button-get-in-touch-logo-email {
                                     background-color: transparent;
+                                    padding: 10%;
                                     margin: 0.2vw 0 0 0vw;
-                                    width: 100%;
+                                    width: 120%;
                                     @media (max-width: 992px){
                                         @include transform_scale(1.5, 1.5, 1.5, 1.5);
                                     }
                                     @include transition_all(1s, 1s, 1s);
                                     //border: 1px solid blueviolet;
                                     &:hover {
-                                        border-radius: 50px 50px 50px 50px;
+                                        border-radius: 50%;
                                         filter: invert(100%);
                                         background-color: yellow;
                                         mix-blend-mode: hue;
